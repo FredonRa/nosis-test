@@ -30,7 +30,7 @@
 
 https://nosis-test.vercel.app/
 
-![Demo image](https://github.com/FredonRa/nosis-test/blob/master/src/img/screenshot-test.png)
+![Demo image](https://github.com/FredonRa/nosis-test/blob/master/src/assets/screenshot-test.png)
 
 *** RUN ***
 
