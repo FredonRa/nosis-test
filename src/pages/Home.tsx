@@ -28,8 +28,13 @@ const ContainerFilms = styled.section`
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    max-width: 1240px;
+    max-width: 976px;
     margin: 0 auto;
+`
+
+const Header = styled.div`
+    max-width: 976px;
+    margin: 0 auto 50px auto;
 `
 
 const HomePage: React.FC = () => {
@@ -75,22 +80,24 @@ const HomePage: React.FC = () => {
 
     return (
         <main>
-            <Title>Movie Browser</Title>
-            <Browser 
-                onChangeText={(value) => setInputValue(value)} 
-                onClick={getFilms} 
-                placeholder="Enter the name of the movie :)"
-                buttonTitle="Search"
-                value={inputValue}
-            />
-            {(films.length > 0 || error.state) && (
-                <Subtitle>
-                    <Trash onClick={removeSearch}>
-                        <img src={trash} alt="trash icon"/>
-                    </Trash>
-                    {subtitle}
-                </Subtitle>
-            )}
+            <Header>
+                <Title>Movie Browser</Title>
+                <Browser 
+                    onChangeText={(value) => setInputValue(value)} 
+                    onClick={getFilms} 
+                    placeholder="Enter the name of the movie :)"
+                    buttonTitle="Search"
+                    value={inputValue}
+                />
+                {(films.length > 0 || error.state) && (
+                    <Subtitle>
+                        <Trash onClick={removeSearch}>
+                            <img src={trash} alt="trash icon"/>
+                        </Trash>
+                        {subtitle}
+                    </Subtitle>
+                )}
+            </Header>
             <ContainerFilms>
                 {   
                     isLoading ? 
