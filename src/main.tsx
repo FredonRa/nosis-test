@@ -1,8 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App'
 import Home from './pages/Home';
 import Film from './pages/Film';
+import "./main.css"
 
 import {
   createBrowserRouter,

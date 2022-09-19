@@ -9,5 +9,6 @@ export type Film = {
 export type Search = {
     "Search": Film[],
     "totalResults": string,
-    "Response": "True" | "False"
+    "Response": "True" | "False",
+    "Error": string
 }
