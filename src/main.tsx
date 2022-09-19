@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import Home from './pages/Home';
-import Film from './pages/Film';
+import HomePage from './pages/Home';
+import FilmPage from './pages/Film';
 import "./main.css"
 
 import {
@@ -12,11 +12,11 @@ import {
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home />,
+    element: <HomePage />,
   },
   {
     path: "/film/:id",
-    element: <Film />,
+    element: <FilmPage />,
   },
 ]);
 
