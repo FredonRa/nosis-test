@@ -32,7 +32,7 @@ const ContainerFilms = styled.section`
     margin: 0 auto;
 `
 
-const Home: React.FC = () => {
+const HomePage: React.FC = () => {
     const [inputValue, setInputValue] = React.useState<string>("")
     const [subtitle, setSubtitle] = React.useState<string>("")
     const [films, setFilms] = React.useState<Film[]>([])
@@ -103,4 +103,4 @@ const Home: React.FC = () => {
     );
 }
  
-export default Home;
+export default HomePage;
